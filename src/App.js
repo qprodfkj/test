@@ -6,9 +6,9 @@ class App extends Component {
       { 
         brdno: 1, 
         brdwriter: 'Twice', 
-        brdtitle: 'If you intend to live then you die'
-        , brddate: new Date() 
-      , 
+        brdtitle: 'If you intend to live then you die', 
+        brddate: new Date()  
+      },
       { 
         brdno: 2, 
         brdwriter: 'Itzy', 
@@ -21,13 +21,13 @@ class App extends Component {
   render(){
     const {boards} = this.state;
     const list = boards.map(function(row){
-      return row.brdno + row.brdwriter;
+      return row.brdno + row.brdwriter + '\n';
     });
 
     return(
-      <div>
-        {list}
-      </div>
+      <p>
+        {list}<br/>
+      </p>
     )
 
   }
