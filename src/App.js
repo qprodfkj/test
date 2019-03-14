@@ -20,14 +20,24 @@ class App extends Component {
 
   render(){
     const {boards} = this.state;
-    const list = boards.map(function(row){
-      return row.brdno + row.brdwriter + '\n';
-    });
+    // const list = boards.map(function(row){
+    //   return row.brdno + row.brdwriter + '\n';
+    // });
+
+    // return(
+    //   <p>
+    //     {list}<br/>
+    //   </p>
+    // )
 
     return(
-      <p>
-        {list}<br/>
-      </p>
+      <div>
+        {
+          boards.map(function(row){
+            return row.brdno + "\n\n\n" + row.brdwriter + "\t" + row.brdtitle;
+          })
+        }
+      </div>
     )
 
   }
