@@ -6,13 +6,13 @@ class App extends Component {
       { 
         brdno: 1, 
         brdwriter: 'Twice', 
-        brdtitle: 'If you intend to live then you die', 
+        brdtitle: 'JYP - Likey', 
         brddate: new Date()  
       },
       { 
         brdno: 2, 
         brdwriter: 'Itzy', 
-        brdtitle: 'Founder for two countries'
+        brdtitle: '달라달라'
         , brddate: new Date() 
       } 
     ] 
